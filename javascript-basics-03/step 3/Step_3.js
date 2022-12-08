@@ -1,0 +1,9 @@
+red=document.querySelector(".red").onclick=()=>{
+    document.getElementById("text").style="color:red;"
+}
+red=document.querySelector(".green").onclick=()=>{
+    document.getElementById("text").style="color:green;"
+}
+red=document.querySelector(".blue").onclick=()=>{
+    document.getElementById("text").style="color:blue;"
+}
