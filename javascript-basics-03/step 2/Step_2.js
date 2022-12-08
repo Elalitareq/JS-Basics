@@ -1,6 +1,10 @@
-document.getElementById("hide").onclick=()=>{
-    document.getElementById("texte").style="color:transparent;"
-}
-document.getElementById("show").onclick=()=>{
-    document.getElementById("texte").style="color:black;"
-}
+document.querySelectorAll("a").forEach(element => {
+    element.onclick=(e)=>{
+        if(e.target.id=="hide"){
+            document.querySelector("div").style="color:transparent;"
+        }
+        else if(e.target.id=="show"){
+            document.querySelector("div").style="color:black"
+        }
+    }
+});
