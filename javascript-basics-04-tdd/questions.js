@@ -89,15 +89,16 @@ const BMI = (weight, height) => {
 }
 
 const createLanguagesArray = () => {
-    anArray=["Html","CSS","Java","PHP"]
-    return(anArray)
+    langArray=["Html","CSS","Java","PHP"]
+    return(langArray)
 }
 
 const createNumbersArray = () => {
-    anArray=[]
-    for(i=0;i<6;i++)
-    anArray.push(i)
-    return(anArray)
+    numArray=[]
+    for(i=0;i<6;i++){
+        numArray.push(i)
+    }
+    return(numArray)
 }
 
 const replaceElement = (languages) => {
@@ -111,40 +112,39 @@ const addElement = (languages) => {
 }
 
 const addNumberElement = (numbers) => {
-    numbers.splice(0,0, -2,-1)
+    numbers.splice(0,0,-2,-1)
     return(numbers)
-
 }
 
 const removeFirst = (languages) => {
-    languages.splice(0,1,)
+    languages.splice(0,1)
     return(languages)
 }
 
 const removeLast = (languages) => {
-    languages.splice(-1,1,)
+    languages.splice(-1,1)
     return(languages)
 }
 
 const convertStrToArr = (social_arr) => {
-    l_array=[]
-    social_arr.split(",").forEach(g => {
-        l_array.push(g)
+    s_arr=[]
+    social_arr.split(",").forEach(x => {
+        s_arr.push(x)
     });
-    return(l_array)
+    return(s_arr)
 }
 
 const convertArrToStr = (languages) => {
-    f=languages.toString()
-    return(f)
+    g=languages.toString()
+    return(g)
 }
 
 const sortArr = (social_arr) => {
-    g=social_arr.sort()
-    return(g)
+    social_arr.sort()
+    return(social_arr)
 }
 
 const invertArr = (social_arr) => {
-    g=social_arr.reverse()
-    return(g)
+    x=social_arr.reverse()
+    return(x)
 }
