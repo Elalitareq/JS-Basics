@@ -8,6 +8,7 @@ red=document.querySelector(".blue").onclick=()=>{
     document.getElementById("text").style="color:blue;"
 }
 // or
+// this is just a test for different way to approach this
 // g=document.querySelectorAll("div .color").forEach(c => {
 //     c.onclick=(p)=>{
 //         if(p.target.className=="color red"){
